@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-div{
+  background: linear-gradient(to right-bottom, #e1b382, #c89666);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-div
+{background-color: #12343b;
+min-width: 450px;
+min-height: 650px;
+padding: 30px;
+box-sizing: border-box;
+border-radius: 10px ;
+box-shadow:3px 6px 40px #000 ;
+margin-bottom: 10px;}
+
+.header h1
+{color: #fff;
+text-align: center;
+margin: 30px 0;}
+
+.addItems{
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size:20px ;
+  color: #ccc;
+  background-color: #000000;
+  border: 1px solid #c89666;
+  border-radius: 10px;
+}
+
+
+.eachItems{
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+
+.button-delete,
+.button-edit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 28px;
+    border-radius: 50%;
+     color: lightseagreen;
+     text-align: right;
+     text-align-last: right;
+     margin-left: 250px;
+}
+
+.button-add{
+  width: 70px;
+  padding: 15px 15px ;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-attachment: #f1af71;
+  cursor: pointer;
+}
