@@ -18,9 +18,9 @@ export const deleteTodo = (id) => {
     }
 }
 
-export const removeTodo = (data) => {
-    return {
-        type: "REMOVE_TODO",
-        payload: ""
-    }
-}
+
+export const EditTodo = (todos) => ({
+    type: "EDIT_TODO",
+ payload: todos
+  });
+
