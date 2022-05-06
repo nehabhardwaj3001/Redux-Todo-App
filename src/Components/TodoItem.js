@@ -21,17 +21,24 @@ const TodoItem = ({todo}) => {
                    />
 ) : 
 (<h4>{todo.data}</h4>)}
-   <button className='btn-edit' 
+  { !isEditing && <button className='btn-edit' 
+                        onClick={()=>{
+                            if(isEditing){
+                                setEditTodo(todo.data)
+                            }
+                            setIsEditing(!isEditing)
+                            }}>EDIT</button>}
+
+{isEditing &&  <button className='btn-edit' 
                         onClick={()=>{
                             dispatch(EditTodo({
                                 ...todo,
                                 data:editTodo
                             }))
-                            if(isEditing){
-                                setEditTodo(todo.data)
-                            }
+
                             setIsEditing(!isEditing)
-                            }}>{isEditing?"UPDATE" : "EDIT"}</button>
+                            }}>UPDATE</button>}
+                            
 <button className='button-delete'> 
   <i className='far fa-trash-alt add-btn' 
   title='Delete-item'
